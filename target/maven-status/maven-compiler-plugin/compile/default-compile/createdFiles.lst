@@ -1,0 +1,5 @@
+com\introbotics\tables\RFID_Tags.class
+com\introbotics\UserRepository.class
+com\introbotics\tables\User.class
+com\introbotics\tables\CheckInRecords.class
+com\introbotics\DatabaseConnections.class

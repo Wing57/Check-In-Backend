@@ -15,8 +15,9 @@ public class UserRepository {
     
     public void insertUser(User user) {
         String sql = "INSERT INTO Users(name, role) VALUES(?, ?)";
-
+        
         try (Connection conn = DatabaseConnections.connect();
+       
              PreparedStatement pstmnt = conn.prepareStatement(sql)) {
                 pstmnt.setString(1, user.getName());
                 pstmnt.setString(2, user.getRole());

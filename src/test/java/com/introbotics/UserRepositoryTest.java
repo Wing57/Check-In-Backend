@@ -21,7 +21,7 @@ public class UserRepositoryTest {
     @Test
     public void testInsertUser() {
         User user = new User();
-        user.setName("Bomboclat");
+        user.setName("Hi");
         user.setRole("user");
 
         userRepository.insertUser(user);
@@ -30,8 +30,8 @@ public class UserRepositoryTest {
         System.out.println("Inserted User ID: " + userid);
 
         User retrievedUser = userRepository.getUser(userid);
-       // assertNotNull("User should be inserted and retrievable", retrievedUser);
-        //assertEquals("Bomboclat", retrievedUser.getName());
+       assertNotNull("User should be inserted and retrievable", retrievedUser);
+        assertEquals("Hi", retrievedUser.getName());
     }
 
     /*@Test
@@ -49,4 +49,21 @@ public class UserRepositoryTest {
         assertNull("User should not exist", retrievedUser);
 
     } */
+
+    @Test
+    public void testUpdateUser() {
+        int idToUpdate = 10;
+
+        User retrivedUser = userRepository.getUser(idToUpdate);
+        assertNotNull("User should exist", retrivedUser);
+
+        retrivedUser.setName("lesussyclat");
+        retrivedUser.setRole("admin");
+        userRepository.updateUser(retrivedUser);
+
+        User updatedUser = userRepository.getUser(idToUpdate);
+
+        assertNotNull("User should be retrievable", updatedUser);
+        assertEquals("lesussyclat", updatedUser.getName());
+    }
 }

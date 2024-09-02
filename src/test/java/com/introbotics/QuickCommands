@@ -1,0 +1,3 @@
+mvn test -Dtest=UserRepositoryTest#testInsertUser
+mvn test -Dtest=UserRepositoryTest#testDeleteUser
+mvn test -Dtest=UserRepositoryTest#testUpdateUser

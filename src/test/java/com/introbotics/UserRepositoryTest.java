@@ -34,9 +34,9 @@ public class UserRepositoryTest {
         assertEquals("Hi", retrievedUser.getName());
     }
 
-    /*@Test
+    @Test
     public void testDeleteUser() {
-        int idToDelete = 5;
+        int idToDelete = 11;
 
         User retrievedUser = userRepository.getUser(idToDelete);
         assertNotNull("User should exist", retrievedUser);
@@ -48,11 +48,11 @@ public class UserRepositoryTest {
         retrievedUser = userRepository.getUser(idToDelete);
         assertNull("User should not exist", retrievedUser);
 
-    } */
+    } 
 
     @Test
     public void testUpdateUser() {
-        int idToUpdate = 10;
+        int idToUpdate = 11;
 
         User retrivedUser = userRepository.getUser(idToUpdate);
         assertNotNull("User should exist", retrivedUser);

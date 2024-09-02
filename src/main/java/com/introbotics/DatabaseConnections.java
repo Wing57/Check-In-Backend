@@ -8,7 +8,7 @@ import org.sqlite.SQLiteException;
 
 public class DatabaseConnections {
     
-    private static final String URL = "jdbc:sqlite::resource:testDB.db";
+    private static final String URL = "jdbc:sqlite:C:\\myDataBase\\testDB.db";
 
     public static Connection connect() {
         Connection connection = null;

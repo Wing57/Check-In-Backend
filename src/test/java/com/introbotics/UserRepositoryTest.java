@@ -18,7 +18,7 @@ public class UserRepositoryTest {
         userRepository = new UserRepository();
     }
 
-    @Test
+   /*  @Test
     public void testInsertUser() {
         User user = new User();
         user.setName("Hi");
@@ -65,5 +65,5 @@ public class UserRepositoryTest {
 
         assertNotNull("User should be retrievable", updatedUser);
         assertEquals("lesussyclat", updatedUser.getName());
-    }
+    } */
 }

@@ -18,10 +18,10 @@ public class UserRepositoryTest {
         userRepository = new UserRepository();
     }
 
-   /*  @Test
+     @Test
     public void testInsertUser() {
         User user = new User();
-        user.setName("Hi");
+        user.setName("oh");
         user.setRole("user");
 
         userRepository.insertUser(user);
@@ -31,8 +31,8 @@ public class UserRepositoryTest {
 
         User retrievedUser = userRepository.getUser(userid);
        assertNotNull("User should be inserted and retrievable", retrievedUser);
-        assertEquals("Hi", retrievedUser.getName());
-    }
+        assertEquals("oh", retrievedUser.getName());
+    } /* 
 
     @Test
     public void testDeleteUser() {
